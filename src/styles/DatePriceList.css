@@ -1,0 +1,297 @@
+/* Outer container */
+.date-price-list-outer {
+  background-color: #f0f0f0;
+  padding: 20px; 
+}
+
+/* Container with white background */
+.date-price-list-container {
+  background-color: #FFFFFF; 
+  padding: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: fit-content; 
+  margin: 0 auto; 
+}
+
+/* Flex display for date-price items */
+.date-price-list {
+  display: flex;
+  align-items: flex-start; 
+  gap: 20px; 
+}
+
+/* Styling for each date-price item */
+.date-price-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center;
+  position: relative; 
+}
+
+/* Styling for date text */
+.date {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #223A60;
+  margin-bottom: 5px; 
+}
+
+/* Styling for amount text */
+.amt {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00AC5A; 
+}
+
+/* Highlight specific date-price item */
+.date-price-item:nth-child(2) .date,
+.date-price-item:nth-child(2) .amt {
+  color: #0094E7; 
+}
+
+/* Vertical separator line */
+.separator {
+  width: 1px;
+  height: 100%; 
+  background-color: #ddd;
+  position: absolute; 
+  right: -10px; 
+  top: 0;
+  transform: translateX(50%); 
+}
+
+/* Button section styling */
+.button-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: #ffffff; 
+  padding: 10px; 
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Button styling */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF; 
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Background colors for buttons */
+.recommended, .cheapest, .fastest {
+  background-color: #223A60; 
+}
+
+.price-calendar {
+  background-color: #369F5A; 
+}
+
+/* Sort info text */
+.sort-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #223A60;
+  margin-top: 10px;
+}
+
+/* Airline information box styling */
+.airline-info-box {
+  background-color: #ffffff; 
+  margin-top: 20px; 
+  padding: 15px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+/* Header section styling */
+.airline-info-header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  gap: 10px;
+}
+
+.airline-left {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.airline-logo {
+  width: 30px; 
+  height: 30px; 
+  object-fit: cover;
+}
+
+.airline-name, .travel-class {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #223A60;
+}
+
+/* Container for airline information */
+.airline-info-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Flight details box */
+.flight-details-box {
+  display: flex;
+  gap: 10px;
+  background-color: #e0e0e0;
+  padding: 10px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for flight details */
+.flight-details-left,
+.flight-details-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Styling for flight detail text */
+.flight-detail {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #223A60;
+  margin-bottom: 5px;
+}
+
+/* Styling for date-time text */
+.flight-detail.date-time {
+  font-weight: 500;
+}
+
+/* Larger, bold time text */
+.flight-detail.time {
+  font-size: 18px; 
+  font-weight: bold; 
+}
+
+/* Center content styling */
+.flight-details-center {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image for flight duration */
+.flight-duration-image {
+  width: 20px; 
+  height: auto;
+  margin-left: 3px; 
+}
+
+/* Pricing info styling */
+.pricing-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+  gap: 5px;
+}
+
+/* Price and discount text */
+.prices {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #223A60;
+}
+
+.discount {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #00AC5A;
+}
+
+/* Book Now button */
+.book-now-btn {
+  font-family: 'Poppins', sans-serif;
+  background-color: #223a60;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.additional-info-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0; 
+}
+
+/* Styling for seats info on the left */
+.seats-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #000000; 
+}
+
+/* Styling for refund info in the center */
+.refund-info {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #FD7E14;
+  text-align: center;
+}
+
+/* Styling for details info on the right */
+.details-info {
+  font-family: 'Poppins', sans-serif, Segoe UI;
+  font-size: 14px;
+  color: #482A89;
+  text-align: right;
+  cursor: pointer; 
+}
+
+.special-info-line {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  gap: 20px;
+}
+
+/* Styling for each special info item */
+.special-info {
+  font-family: 'Poppins', sans-serif;
+  color: #223A60; 
+  text-align: center;
+}
+
+/* Styling for the 'Cheapest' button */
+.btn-cheapest-special {
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 55px;
+  padding: 10px;
+  background: linear-gradient(90deg, #00AC5A 0%, #3B9E9E 100%);
+  margin-left: auto; 
+}
